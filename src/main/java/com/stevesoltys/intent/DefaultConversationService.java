@@ -4,6 +4,7 @@ import com.stevesoltys.intent.builder.ConversationBuilderScriptScanner;
 import com.stevesoltys.intent.classifier.DefaultIntentClassifier;
 import com.stevesoltys.intent.classifier.DefaultIntentClassifierConfiguration;
 import com.stevesoltys.intent.entity.EntityTag;
+import com.stevesoltys.intent.expression.DefaultExpressionFactory;
 import com.stevesoltys.intent.model.IntentEntry;
 import com.stevesoltys.intent.model.Message;
 import com.stevesoltys.intent.model.Response;
@@ -27,6 +28,7 @@ public class DefaultConversationService implements ConversationService {
 
         DefaultIntentClassifierConfiguration configuration = DefaultIntentClassifierConfiguration.builder()
                 .intentRepository(intentRepository)
+                .expressionFactory(new DefaultExpressionFactory())
                 .build();
 
         intentClassifier = new DefaultIntentClassifier(configuration);
