@@ -24,8 +24,8 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.stevesoltys:intent:7192925425a465a071b29769d1ba7dc0159d062a'
-    compile 'com.github.stevesoltys:intent-example:4ba250b021ff02bcf26b424d84ea8dd5ea2d815c'
+    compile 'com.github.stevesoltys:intent:master'
+    compile 'com.github.stevesoltys:intent-example:master'
     compile "net.soundvibe:jkob:1.0.0"
     compile "io.github.lukehutch:fast-classpath-scanner:2.18.2"
 
